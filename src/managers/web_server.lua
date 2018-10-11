@@ -4,7 +4,7 @@ local possible_response
 
 require "package_loader"
 
--- try to trigger every rule. If the process failed give error 500
+-- try to trigger every rule; if the process fails give error 500
 utils.try(function()
     for k, v in pairs(rules) do 
         v.rule(request, events)
