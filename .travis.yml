@@ -12,7 +12,7 @@ before_deploy: "./build.sh torchbear ${TRAVIS_OS_NAME}"
 deploy:
   provider: releases
   api_key:
-    secure: "<KEY>"
+    secure: "1iVZXaKZCDCsLOvoFY14TMzWVdvhx5i9jFpXSGnGMtREbS+zrQtox10NBr/WZNLRQ+QB2YviHqcMYgjzoyFde9+dZ0Btw/1gj4/nL4y1qRufFb1OzX79jf350H5S4DWJXrf5w5AywSmhhOlbkIob2IbvigASsNXmm4jZPA3jlG8YS/dpVPtNIROn1Y5cfMLUEgOA+Yc5tpyplt1ql+a2Ue2Z7tAtV6ZsOguxDtf3rAFUDiqVzIMYocUWsznzFyW/8BO1QuOZw2gQQLXqVgRLy5PwjCU+V5jchdqAtTNYxQznYpUO7dKY82y7etWNO2/2XiShR7bJ0hiCPBCKet+0q7FeOl0hX+JYr/ozzku+PMEIc+tvaf+gbTh2GgNeNYLe0QzjT5TgAD2EGQtVvAY0fXXQxcX+T3TZK7yfcovZL5bJNp5H/rghgpH4kYBG6dTBak62Z5BuqyIGfJStH9/iXhON6YyN2GgI80bUbroE1evXVAdR2C6wQnIhXVNaD7W1XYcxxR9QQkyCiFGXrqe2bYgR0DEm7su+dtpgukspPcsUyKpn7OvECflsVG72oK3A0V+oHj9bgQsFxdnHnygGpx+PitDAYHl1OgHbvvVvx4E27xAhosK9ILBfW4c8o9SvA5EJnNYmrCM3zQwznyPdDCAjyzizDa76wdAEtESV9GM="
   file_glob: true
   file: "torchbear-${TRAVIS_OS_NAME}.*"
   skip_cleanup: true
