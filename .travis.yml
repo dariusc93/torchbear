@@ -17,6 +17,6 @@ deploy:
   file: "torchbear-${TRAVIS_OS_NAME}.*"
   skip_cleanup: true
   on:
-    repo: foundpatterns/torchbear
+    repo: dariusc93/torchbear
     rust: stable
-  
+   
