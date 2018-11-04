@@ -1,9 +1,6 @@
-language: rust
 sudo: required
 os:
 - linux
-rust:
-- stable
 services:
 - docker
 before_install:
@@ -18,5 +15,4 @@ deploy:
   file: "torchbear-${TRAVIS_OS_NAME}.*"
   on:
     repo: dariusc93/torchbear
-    rust: stable
     branch: dev
